@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="firstName" placeholder="First Name" />
+      <input type="text" id="lastName" placeholder="Last Name" />
+      <input type="number" id="age" placeholder="Age" />
+      <!-- <input type="tel" id="phone" placeholder="Phone Number" /> -->
+      <input
+        type="tel"
+        id="phone"
+        pattern="\(\d{3}\) \d{3}-\d{4}"
+        required
+        placeholder="Phone Number"
+      />
+      <input type="text" id="email" placeholder="Email Address" />
+      <input
+        type="text"
+        id="classes"
+        placeholder="Add Classes seperated by commas"
+      />
+      <input type="submit" id="submit" value="Add Name & Classes" />
+      <div>
+        <button id="getName">Get All Names</button>
+      </div>
+    </div>
+
+    <div id="app"></div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
