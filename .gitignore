@@ -8,7 +8,7 @@
 # vs code
 .vscode
 .npm
-
+sftp.json
 # project
 /css/styles.css.map
 .prepros
